@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
   $('.popup-window').each(function() {
     let top = Math.floor(Math.random() * 100).toString() + "%";
-    let left = Math.floor(Math.random() * 80).toString() + "%";
+    let left = Math.floor(Math.random() * 70).toString() + "%";
     let popup = $(this);
 
     setTimeout(function(){
@@ -17,6 +17,14 @@ $( document ).ready(function() {
 
     time += 175;
   });
+
+  setTimeout(function() {
+    $('.message').css({"display": "flex"});
+  }, 10000);
+
+  setTimeout(function() {
+    $('.message').css({"display": "none"});
+  }, 12000);
 
   // close popup when cross is clicked
   $('.popup-close').click(function() {

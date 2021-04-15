@@ -77,6 +77,21 @@
   background-color: #D6D6D6;
 }
 
-.hidden {
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #E0E0E0;
   display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-inner {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
 }
