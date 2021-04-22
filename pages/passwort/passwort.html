@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schutz der eigenen Passwörter</title>
+
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="passwort.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="passwort.js"></script>
+  </head>
+
+  <body>
+    <div class="intro-container container">
+      <div class="wrapper">
+        <div class="login">
+          <form class="loginform">
+            <h2>Anmeldung bei dein mail-provider.com</h2>
+            <div class="loginfield">
+              <label for="uname"><b>Benutzer</b></label>
+              <input type="text" placeholder="Benutzername eingeben" name="uname" required>
+            </div>
+            <div class="loginfield">
+              <label for="psw"><b>Passwort</b></label>
+              <input type="password" placeholder="Passwort eingeben" name="psw" required>
+            </div>
+            <div class="login-button">
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <a class="login-forgot" href="#">Passwort vergessen?</a>
+          </form>
+        </div>
+        <h1 class="text-center">Was war nur scho wieder das Passwort</h1>
+        <div class="text-center">
+          Horst ist schon ein vergesslicher Typ. Wieder hat er sein Passwort vergessen.. <br>
+          Das bleibt ihm wohl nichts anderes übrig als den "<a class="login-forgot" href="#">Passwort vergessen?</a>" Link anzuklicken..
+        </div>
+      </div>
+    </div>
+
+    <div class="container content-container hidden">
+      <div class="wrapper">
+        <h1 class="text-center">Lass uns was zur Passwortsicherheit lernen</h1>
+        <div class="text-center">
+          Wenn man sich ein neues Passwort eingeben soll, braucht das einerseits viel Phantasie und andererseits muss das Passwort
+          gewissen Kriterien gerecht werden.
+          Das das mühsam sein kann wissen wir alle und Horst erst recht. Doch wieso sollte man darauf achten ein gutes Passwort zu wählen,
+          was ist überhaupt ein guten Passwort und gibt es Programme die einem da helfen?
+        </div>
+        <h2 class="text-center">Erfahre mehr darüber</h2>
+        <div class="link-box">
+          <a class="link textlink link-active">Als Text</a>
+          <a class="link audiolink">Als Audio</a>
+        </div>
+        <div class="theorietext">
+          <p>Hier Theorie einfüfen</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="theorieaudio hidden">
+          <p>Hier Audio-Datei einfügen</p>
+        </div>
+        <h2 class="text-center">Eigentlich gut zu wissen, oder?</h2>
+        <div class="text-center">
+          <p>Das wir das nun wissen, können wir mit Horst sein neues Passwort wählen</p>
+        </div>
+        <div class="link-box">
+          <a class="link "href="../neuespasswort/neuespasswort.html">Zum Passwort-Formular</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
