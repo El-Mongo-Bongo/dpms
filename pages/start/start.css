@@ -1,0 +1,58 @@
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+}
+
+.content-container {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.fadein {
+  opacity: 1 !important;
+  transition: 0.5s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-antivirus {
+  position: absolute;
+  width: 300px;
+  max-width: 100%;
+  height: 200px;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -175px;
+  border: 2px solid #000;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.popup-upper {
+  text-align: center;
+}
+
+.popup-lower {
+  display: flex;
+}
+
+.button {
+  margin: 1rem;
+}
