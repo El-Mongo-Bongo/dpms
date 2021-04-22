@@ -1,0 +1,8 @@
+.link-box {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-link, .textlink {
+  margin-right: 2rem
+}

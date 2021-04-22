@@ -3,45 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Horst möchte im Internet surfen</title>
+    <title>Besser aufpassen es geht um Phishing</title>
 
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="surfen.css">
+    <link rel="stylesheet" href="phishing.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="surfen.js"></script>
+    <script src="phishing.js"></script>
   </head>
 
   <body>
-    <div class="container intro-container">
+    <div class="intro-container container">
       <div class="wrapper">
         <div class="placeholder">
-          Hier kommt Bild "Horst will surfen"
+          Hier kommt Bild "Horst trinkt Kaffee und isst ein Kecks"
         </div>
-        <h1 class="text-center">Nach der harten Update-Entscheidung braucht Horst erstmals eine Pause und
-          möchte ein wenig im Internet surfen</h1>
-        <div class="text-center">
-          Das Update von vorhin hat sein Interesse an Datensicherheit geweckt und nun überlegt sich Horst mit dem Inkogintobrowser
-          zu surfen um anonym in Netz unterwegs zu sein. Doch stimmt da wirklich?
-        </div>
-        <h2 class="text-center">Was meinst du?</h2>
-        <div class="link-box">
-          <a class="link confirm-link">Klar!</a>
-          <a class="link denie-link">Sicherlich nicht!</a>
+        <h1 class="text-center">Mhhhm lecker Kaffeepause</h1>
+
+        <div class="mail-popup hidden">
+          <div class="popup-upper">
+            Du hast eine neue Mail
+          </div>
+          <div class="popup-lower">
+            <button class="button update-now">Öffnen</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="placeholder-big confirm-meme hidden">
-      Hier kommt Meme / GIF "Nicht wirklich"
-    </div>
-    <div class="placeholder-big denie-meme hidden">
-      Hier kommt Meme / GIF "Score!
+
+    <div class="mail-container container hidden">
+      <div class="mail">
+        <div class="mail-header">
+          <div class="mail-sender">
+            <p><b>Sender:</b> info@diebank.ch</p>
+            <p><b>Empfänger:</b> horst@mail-provider.com</p>
+            <br>
+          </div>
+          <div class="mail-betreff">
+            <b>Betreff:</b> Ihr E-Banking Login
+          </div>
+        </div>
+        <div class="mail-body">
+          <p>Sehr geehrter Herr Horst</p>
+          <p>Bei Ihrem E-Banking-Login gab es ein verdächtige Anmeldung.<br>
+          Um die Sicherheit Ihrer Daten gewährleisten zu können bitte wir Sie freundlichst
+          sich über folnden Link in Ihr E-Banking einzuloggen: </p>
+          <p><a class="mail-link" href="#">http://ebanking.diebank.ch/asdjbjewbfbjsad</a></p>
+          <p>Besten Dank für Ihr Vertrauen in unseren Bank</p>
+          <p>Freundliche Grüsse,</p>
+          <p>Ihr Kundenservice</p>
+        </div>
+      </div>
+
+      <div class="options">
+        <h1 class="text-center">Wieder mal eine dieser Mail</h1>
+        <div class="text-center">
+          Solche Mails gibt es ja noch oft, wo sich Institutionen melden und etwas von einem möchten.<br>
+          Doch sind diese eigentlich vertrauenswürdig?<br>
+          Was meinst du? Soll Horst den Link anwählen?
+        </div>
+        <div class="link-box">
+          <a class="link positive-link">Ja, E-Mails sind immer vertrauenswürdig</a>
+          <a class="link negative-link">Nein, das ist eine Betrugsmasche</a>
+        </div>
+      </div>
     </div>
 
-    <div class="container content-container hidden">
+    <div class="content-container container hidden">
       <div class="wrapper">
         <h1 class="text-center"></h1>
-        <h2 class="text-center">Doch wieso ist das so mit dem Inkogintobrowser?</h2>
+        <h2 class="text-center title"></h2>
         <div class="text">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </div>
@@ -57,12 +88,12 @@
         <div class="theorieaudio hidden">
           <p>Hier Audio-Datei einfügen</p>
         </div>
-        <h2 class="text-center">So ist das also</h2>
+        <h2 class="text-center">Phishing ist schon eine üble Sache</h2>
         <div class="text-center">
-          <p>So, nun lass Host endlich surfen und entspannen</p>
+          <p>Aber jetzt weiss Horst bescheid. Lass uns doch seine restlichen Mails checken.</p>
         </div>
         <div class="link-box">
-          <a class="link "href="../cookies/cookies.html">Ok, los!</a>
+          <a class="link "href="../phishing/phishing.html">Zu seinem Mailkonto</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,107 @@
+
+.cookie-wrapper {
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  transition: width 4s linear;
+}
+
+.cookie-wrapper-right {
+  width: 99%;
+}
+
+.cookie {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #e1c699;
+  position: relative;
+  border: 1px solid #964B00;
+  float: right;
+}
+
+.cookie-chip-1 {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  border-radius: 100%;
+}
+
+.cookie-chip-2 {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 55px;
+  top: 75px;
+  border-radius: 100%;
+}
+
+.cookie-chip-3 {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border-radius: 100%;
+}
+
+.cookie-chip-4 {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 80px;
+  top: 35px;
+  border-radius: 100%;
+}
+
+.cookie-chip-5 {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  border-radius: 100%;
+}
+
+.cookie-chip-6 {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: #964B00;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  border-radius: 100%;
+}
+
+.subintro-container {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.fadein {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.link-box {
+  display: flex;
+  justify-content: center;
+}
+
+.accept-link, .textlink {
+  margin-right: 2rem;
+}

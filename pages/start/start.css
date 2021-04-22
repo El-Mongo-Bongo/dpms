@@ -14,17 +14,17 @@
 
 .content-container {
   opacity: 0;
-  transition: 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .fadeout {
   opacity: 0;
-  transition: 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .fadein {
   opacity: 1 !important;
-  transition: 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .hidden {

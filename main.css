@@ -71,6 +71,7 @@ h1 {
   color: #000000;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .link::after {
@@ -110,6 +111,19 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.placeholder-big {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .hidden {
