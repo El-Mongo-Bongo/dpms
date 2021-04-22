@@ -16,25 +16,28 @@
     <div class="intro-container container">
       <div class="wrapper">
         <div class="password">
-          <form class="passwordform">
+          <form class="passwordform" action="">
             <h2>Neues Passwort setzten</h2>
             <div class="fromfield">
               <label for="psw"><b>Passwort</b></label>
-              <input type="password" placeholder="Passwort eingeben" name="uname" required>
+              <input id="password" type="password" placeholder="Passwort eingeben" name="uname" required>
             </div>
             <div class="fromfield">
               <label for="psw"><b>Passwort wiederholen</b></label>
-              <input type="password" placeholder="Passwort wiederholen" name="psw" required>
+              <input id="password-confirm" type="password" placeholder="Passwort wiederholen" name="psw" required>
             </div>
             <div class="submit-button">
-              <button type="submit">Absenden</button>
+              <a class="submit button">Absenden</a>
+            </div>
+            <div class="error hidden">
+              Die Passwörter stimmen nicht überein!
             </div>
           </form>
         </div>
         <h1 class="text-center">Hilf Horst ein neues Passwort zu wählen</h1>
         <div class="text-center">
           Kannst du Horst helfen ein neues Passwort zu wählen?
-          Am besten übernimmst du gleich alles für Ihn, fülltst das obige Formular aus und sendest es ab.
+          Am besten übernimmst du gleich alles für ihn, fülltst das obige Formular aus und sendest es ab.
         </div>
       </div>
     </div>

@@ -3,17 +3,17 @@ $( document ).ready(function() {
      $(this).parent().addClass('fadeout');
      setTimeout(function(){
        $('.video-container').addClass('hidden');
-     }, 510);
+     }, 1100);
      setTimeout(function(){
        $('.content-container').removeClass('hidden');
-     }, 600);
+     }, 1200);
      setTimeout(function(){
        $('.content-container').addClass('fadein');
-     }, 610);
+     }, 1300);
      setTimeout(function(){
        $('.popup-antivirus').addClass('fadein');
        $('h1').text('Immer diese mühsamen Antivirus-Updates.. Soll Horst es ausführen?')
-     }, 3000);
+     }, 4000);
   });
 
   $('.update-now').on('click', function() {

@@ -1,0 +1,44 @@
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.fade1, .fade2, .fade3, .fade4 {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+.fade1 {
+  font-size: 5rem;
+  border-bottom: 2px solid #fff;
+}
+
+.fade2, .fade3 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.fade4 {
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.link {
+  color: #fff;
+}
+
+.link:hover {
+  color: #000;
+}
+
+.link-box {
+  display: flex;
+  justify-content: center;
+}
+
+.show {
+  opacity: 1;
+}
