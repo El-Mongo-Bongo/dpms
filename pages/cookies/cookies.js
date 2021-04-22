@@ -10,7 +10,7 @@ $( document ).ready(function() {
   }, 6200);
   setTimeout(function(){
     $('.subintro-container').removeClass('hidden');
-  }, 6100);
+  }, 5900);
   setTimeout(function(){
     $('.subintro-container').addClass('fadein');
   }, 6200);
