@@ -42,3 +42,15 @@ body {
 .show {
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+  .fade1 {
+    font-size: 3rem;
+  }
+  .fade2, .fade3 {
+    font-size: 2.6rem;
+  }
+  .fade4 {
+    font-size: 2.2rem;
+  }
+}
