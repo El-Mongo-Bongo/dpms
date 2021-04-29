@@ -63,8 +63,6 @@
   height: 100%;
   background-color: #E0E0E0;
   display: none;
-  justify-content: center;
-  align-items: center;
 }
 
 .message-inner {
@@ -95,6 +93,5 @@
 @media screen and (max-width: 600px) {
   .message-inner {
     font-size: 2.8rem;
-    padding: 1rem;
   }
 }

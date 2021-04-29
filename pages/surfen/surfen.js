@@ -6,6 +6,7 @@ $( document ).ready(function() {
         $('.intro-container').addClass('hidden');
         $('.content-container').removeClass('hidden');
         $('.content-container h1').text('Gute Wahl. Das weiss jemand bereits so einiges über Datensicherheit.');
+        window.scrollTo(0, 0);
       }, 1000);
 
       setTimeout(function(){
@@ -20,6 +21,7 @@ $( document ).ready(function() {
         $('.intro-container').addClass('hidden');
         $('.content-container').removeClass('hidden');
         $('.content-container h1').text('Das war jetzt aber auch keine einfache Entscheidung.');
+        window.scrollTo(0, 0);
       }, 1000);
 
       setTimeout(function(){

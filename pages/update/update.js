@@ -3,6 +3,7 @@ $( document ).ready(function() {
 
     if (update == "yes") {
       $('.container').removeClass('hidden');
+      window.scrollTo(0, 0);
     }
     else if (update == "no") {
       for (var i = 0; i < 40; i++) {
@@ -13,9 +14,6 @@ $( document ).ready(function() {
       let time = 0;
       let maxLeft = $(window).width() - $('.popup-window').width();
       let maxTop = $(window).height() - $('.popup-window').height();;
-
-      console.log(maxLeft);
-      console.log(maxTop);
 
       $('.popup-window').each(function() {
         let top = Math.floor(Math.random() * maxTop).toString() + "px";
@@ -30,7 +28,7 @@ $( document ).ready(function() {
       });
 
       setTimeout(function() {
-        $('.message').css({"display": "flex"});
+        $('.message').css({"display": "block"});
       }, 9000);
 
       // close popup when cross is clicked
@@ -60,6 +58,7 @@ $( document ).ready(function() {
         if (popups == 40) {
           $('.shortmessage').addClass('hidden');
           $('.container').removeClass('hidden');
+          window.scrollTo(0, 0);
         }
       });
 

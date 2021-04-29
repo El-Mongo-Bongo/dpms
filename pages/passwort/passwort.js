@@ -2,6 +2,7 @@ $( document ).ready(function() {
   $('.login-forgot').on('click', function() {
     $('.intro-container').addClass('hidden');
     $('.content-container').removeClass('hidden');
+    window.scrollTo(0, 0);
   });
 
   $('.textlink').on('click', function() {

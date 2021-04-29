@@ -21,6 +21,7 @@ $( document ).ready(function() {
     $('.content-container').removeClass('hidden');
     $('.content-container h1').text('Genau so ist es.');
     $('.title').text('Das hat du gut erkannt.');
+    window.scrollTo(0, 0);
   });
 
   $('.positive-link').on('click', function() {
@@ -29,6 +30,7 @@ $( document ).ready(function() {
     $('.content-container').removeClass('hidden');
     $('.content-container h1').text('Aufgepasst mit solchen Mails!');
     $('.title').text('Phishing ist eine gefährliche Sache');
+    window.scrollTo(0, 0);
   });
 
   $('.mail-link').on('click', function() {
@@ -37,6 +39,7 @@ $( document ).ready(function() {
     $('.content-container').removeClass('hidden');
     $('.content-container h1').text('Aufgepasst mit solchen Mails!');
     $('.content-container h2').text('Phishing ist eine gefährliche Sache');
+    window.scrollTo(0, 0);
   });
 
   $('.textlink').on('click', function() {

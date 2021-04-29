@@ -22,6 +22,7 @@ $( document ).ready(function() {
       $('.intro-container').addClass('hidden');
       $('.content-container').removeClass('hidden');
       $('.content-container h1').text('Genau so ist es.');
+      window.scrollTo(0, 0);
     }, 1000);
 
     setTimeout(function(){
@@ -36,6 +37,7 @@ $( document ).ready(function() {
       $('.intro-container').addClass('hidden');
       $('.content-container').removeClass('hidden');
       $('.content-container h1').text('Ab und zu muss man einfach mal akzeptieren.');
+      window.scrollTo(0, 0);
     }, 1000);
 
     setTimeout(function(){
