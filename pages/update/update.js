@@ -11,10 +11,15 @@ $( document ).ready(function() {
 
       let popups = 0;
       let time = 0;
+      let maxLeft = $(window).width() - $('.popup-window').width();
+      let maxTop = $(window).height() - $('.popup-window').height();;
+
+      console.log(maxLeft);
+      console.log(maxTop);
 
       $('.popup-window').each(function() {
-        let top = Math.floor(Math.random() * 100).toString() + "%";
-        let left = Math.floor(Math.random() * 70).toString() + "%";
+        let top = Math.floor(Math.random() * maxTop).toString() + "px";
+        let left = Math.floor(Math.random() * maxLeft).toString() + "px";
         let popup = $(this);
 
         setTimeout(function(){

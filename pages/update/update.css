@@ -72,6 +72,7 @@
   font-weight: 600;
   text-align: center;
   padding: 2rem;
+  background-color: #E0E0E0;
 }
 
 .shortmessage {
@@ -89,4 +90,11 @@
 
 .textlink {
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .message-inner {
+    font-size: 2.8rem;
+    padding: 1rem;
+  }
 }
