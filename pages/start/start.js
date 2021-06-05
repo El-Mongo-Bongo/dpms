@@ -19,7 +19,7 @@ $( document ).ready(function() {
      //setTimeout(function(){
     //   $('h1').text('Immer diese mühsamen Antivirus-Updates.. Soll Horst es ausführen?')
     // }, 5000);
-  });
+  
 
   $('.update-now').on('click', function() {
     sessionStorage.setItem("update", "yes");
@@ -29,3 +29,4 @@ $( document ).ready(function() {
     sessionStorage.setItem("update", "no");
     window.location.href = "../update/update.html";
   });
+});
