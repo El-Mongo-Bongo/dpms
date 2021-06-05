@@ -201,3 +201,6 @@ h1 {
 .clippit-box-text {
   padding: 10px;
 }
+#draggable{
+  position:absolute;
+}
