@@ -30,9 +30,6 @@
 .hidden {
   display: none;
 }
-#draggable{
-  position:absolute;
-}
 .popup-antivirus {
   position: absolute;
   width: 300px;
