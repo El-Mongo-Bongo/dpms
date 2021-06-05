@@ -1,9 +1,9 @@
 $( document ).ready(function() {
-  $('.video-container video').bind('ended', function(){
-     $(this).parent().addClass('fadeout');
-     setTimeout(function(){
-       $('.video-container').addClass('hidden');
-     }, 1100);
+  // $('.video-container video').bind('ended', function(){
+  //    $(this).parent().addClass('fadeout');
+  //    setTimeout(function(){
+  //      $('.video-container').addClass('hidden');
+  //    }, 1100);
      setTimeout(function(){
        $('.content-container').removeClass('hidden');
      }, 1200);
@@ -29,4 +29,3 @@ $( document ).ready(function() {
     sessionStorage.setItem("update", "no");
     window.location.href = "../update/update.html";
   });
-});

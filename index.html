@@ -5,66 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Horst und seine Daten</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="index.js"></script>
     <link rel="icon" href="ressources/images/favicon.ico">
   </head>
 
   <body>
-    <div class="start-bg">
-      <div class="start-header"></div>
-      <div class="container">
-        <div class="wrapper startseite-wrapper">
-          <div class="row">
-            <div class="col col-left">
-                <img class="logo" src="ressources/images/xp-logo-white.png">
-            </div>
-            <div class="col col-right">
-              <div class="user muted">
-                <div class="avatar">
-                  <img class="avatar-img" src="ressources/images/avatar-beach.png">
-                </div>
-                <div class="username">Alan</div>
-              </div>
-              <div class="user muted">
-                <div class="avatar">
-                  <img class="avatar-img" src="ressources/images/avatar-football.png">
-                </div>
-                <div class="username">Gene</div>
-              </div>
-              <!-- Start button: horst -->
-              <a class="link-unstyled" href="pages/start/start.html">
-                <div class="user">
-                  <div class="avatar">
-                    <img class="avatar-img" src="ressources/images/avatar-frog.png">
-                  </div>
-                  <div class="username">Horst</div>
-                </div>
-              </a>
-              <div class="user muted">
-                <div class="avatar">
-                  <img class="avatar-img" src="ressources/images/avatar-chess.png">
-                </div>
-                <div class="username">Nino</div>
-              </div>
-              <div class="user muted">
-                <div class="avatar">
-                  <img class="avatar-img" src="ressources/images/avatar-flower.png">
-                </div>
-                <div class="username">Sandra</div>
-              </div>
-              <div class="user muted">
-                <div class="avatar">
-                  <img class="avatar-img" src="ressources/images/avatar-bike.png">
-                </div>
-                <div class="username">Silvan</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="fullsite">
+      <div class="booting">
+        <img class="boot-button" src="ressources/images/power-button.png" onclick="pressStart()">
       </div>
-      <div class="start-footer"></div>
+    </div>
+    <div class="video-container">
+      <video class="video" id="intro" width="100%" height="auto" autoplay playsinline muted>
+        <source src="ressources/videos/horst_intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     </div>
   </body>
 </html>
