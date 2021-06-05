@@ -9,7 +9,10 @@
 }
 
 body {
-  background: #8CADA7;
+  background-image: url("ressources/images/xp.jpg");
+  background-image: url("xp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1.3rem;
   font-family: Roboto;
   min-height: 100vh;
@@ -87,17 +90,13 @@ h1 {
   background-color: #FFE462;
 }
 
-.link:hover, .link-active {
-  background-color: #FFE462;
-}
 
 .button {
   border: 1px solid #000;
-  padding: 0.6rem 1rem;
+
   background-color: #A3A3A3;
   color: #000;
   text-decoration: none;
-  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -163,4 +162,50 @@ h1 {
   .placeholder {
     height: 250px;
   }
+}
+
+body {
+  background-image: url("xp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clippit-img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  size: 70%;
+}
+
+.clippit-box {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 20em;
+  height: 10em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  border-radius:
+}
+
+.clippit-box-kante::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 80%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-top-color: #FFFDC7;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -18px;
+	margin-bottom: -36px;
+}
+
+.clippit-box-text {
+  padding: 10px;
 }

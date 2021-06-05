@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     $('.confirm-link').on('click', function() {
-      $('.confirm-meme').removeClass('hidden');
+      $('.confirmed').removeClass('hidden');
 
       setTimeout(function(){
         $('.intro-container').addClass('hidden');
@@ -15,18 +15,18 @@ $( document ).ready(function() {
     });
 
     $('.denie-link').on('click', function() {
-      $('.denie-meme').removeClass('hidden');
+      $('.denied').removeClass('hidden');
 
       setTimeout(function(){
         $('.intro-container').addClass('hidden');
         $('.content-container').removeClass('hidden');
         $('.content-container h1').text('Das war jetzt aber auch keine einfache Entscheidung.');
-        window.scrollTo(0, 0);
+          window.scrollTo(0, 0);
       }, 1000);
 
-      setTimeout(function(){
-        $('.denie-meme').addClass('hidden');
-      }, 2000);
+  //    setTimeout(function(){
+  //      $('.denie-meme').addClass('hidden');
+  //    }, 2000);
     });
 
     $('.textlink').on('click', function() {

@@ -11,11 +11,14 @@ $( document ).ready(function() {
        $('.content-container').addClass('fadein');
      }, 1300);
      setTimeout(function(){
-       $('.popup-antivirus').addClass('fadein');
+       $('.window').addClass('fadein');
      }, 4000);
      setTimeout(function(){
-       $('h1').text('Immer diese mühsamen Antivirus-Updates.. Soll Horst es ausführen?')
-     }, 5000);
+       $('.window').addClass('fadein');
+     }, 4000);
+     //setTimeout(function(){
+    //   $('h1').text('Immer diese mühsamen Antivirus-Updates.. Soll Horst es ausführen?')
+    // }, 5000);
   });
 
   $('.update-now').on('click', function() {

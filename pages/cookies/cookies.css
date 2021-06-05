@@ -1,4 +1,26 @@
 
+.window {
+  margin: 50px;
+  width: 800px;
+  height: 400px;
+  background: black;
+}
+
+.clippit-box {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 30em;
+  height: 30em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  font-size: 11pt;
+}
+
+
 .cookie-wrapper {
   width: 100px;
   position: absolute;

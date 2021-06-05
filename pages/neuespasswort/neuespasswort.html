@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="neuespasswort.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="neuespasswort.js"></script>
@@ -15,33 +16,76 @@
   </head>
 
   <body>
-    <div class="intro-container container">
-      <div class="wrapper">
-        <div class="password">
-          <form class="passwordform" action="">
-            <h2>Neues Passwort setzten</h2>
-            <div class="fromfield">
-              <label for="psw"><b>Passwort</b></label>
-              <input id="password" type="password" placeholder="Passwort eingeben" name="uname" required>
-            </div>
-            <div class="fromfield">
-              <label for="psw"><b>Passwort wiederholen</b></label>
-              <input id="password-confirm" type="password" placeholder="Passwort wiederholen" name="psw" required>
-            </div>
-            <div class="submit-button">
-              <a class="submit button">Absenden</a>
-            </div>
-            <div class="error hidden">
-              Die Passwörter stimmen nicht überein!
-            </div>
-          </form>
+
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Neues Passort
         </div>
-        <h1 class="text-center">Hilf Horst ein neues Passwort zu wählen</h1>
-        <div class="text-center">
-          Kannst du Horst helfen ein neues Passwort zu wählen?
-          Am besten übernimmst du gleich alles für ihn, fülltst das obige Formular aus und sendest es ab.
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <div class="intro-container container">
+          <div class="wrapper">
+            <div class="password">
+              <form class="passwordform" action="">
+                <p>Neues Passwort setzten</p>
+                <div class="fromfield">
+                  <label for="psw"><b>Passwort</b></label>
+                  <input id="password" type="password" placeholder="Passwort eingeben" name="uname" required>
+                </div>
+                <div class="fromfield">
+                  <label for="psw"><b>Passwort wiederholen</b></label>
+                  <input id="password-confirm" type="password" placeholder="Passwort wiederholen" name="psw" required>
+                </div>
+                <div class="submit-button">
+                  <button type="button" name="button"><a class="submit button">Absenden</a></button>
+                </div>
+                <div class="error hidden">
+                  Die Passwörter stimmen nicht überein!
+                </div>
+              </form>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="clippit">
+          <div class="clippit-box clippit-box-kante">
+            <div class="clippit-box-text container">
+                <div class="wrapper">
+                  <p>Hilf Horst ein neues Passwort zu wählen</p>
+                  <div class="text-center">
+                    Kannst du Horst helfen ein neues Passwort zu wählen?
+                    Am besten übernimmst du gleich alles für ihn, fülltst das obige Formular aus und sendest es ab.
+                  </div>
+
+                  <div class="options hidden">
+                    
+                  </div>
+              </div>
+
+          </div>
+
+
+          </div>
+          <div class="clippit-img">
+            <img src="clipi.png" alt="clipi">
+          </div>
+      </div>
+
+
+
+
+
+
   </body>
 </html>

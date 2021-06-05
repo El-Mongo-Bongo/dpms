@@ -15,6 +15,14 @@ $( document ).ready(function() {
       let maxLeft = $(window).width() - $('.popup-window').width();
       let maxTop = $(window).height() - $('.popup-window').height();;
 
+      $('.clip_start').addClass('hidden');
+      $('.update').addClass('hidden');
+      setTimeout(function(){
+        $('.clip_error').removeClass('hidden')
+      }, 3000);
+
+
+
       $('.popup-window').each(function() {
         let top = Math.floor(Math.random() * maxTop).toString() + "px";
         let left = Math.floor(Math.random() * maxLeft).toString() + "px";
@@ -27,28 +35,11 @@ $( document ).ready(function() {
         time += 175;
       });
 
-      setTimeout(function() {
-        $('.message').css({"display": "block"});
-      }, 9000);
 
-      // close popup when cross is clicked
-      $('.popup-close').click(function() {
-        $(this).parent().parent().remove();
-        popups += 1;
-
-        if (popups == 10) {
-          $('.shortmessage').removeClass('hidden');
-        }
-
-        if (popups == 40) {
-          $('.shortmessage').addClass('hidden');
-          $('.container').removeClass('hidden');
-        }
-      });
 
       // close popup when ok-button is clicked
       $('.popup-button').click(function() {
-        $(this).parent().parent().remove();
+        $(this).parent().parent().parent().remove();
         popups += 1;
 
         if (popups == 10) {
@@ -62,8 +53,10 @@ $( document ).ready(function() {
         }
       });
 
-      $('.message-button').on('click', function() {
-        $(this).parent().parent().remove();
+
+
+      $('.ok').on('click', function() {
+        $('.clip_error').addClass('hidden');
       });
 
       function createPopUp() {

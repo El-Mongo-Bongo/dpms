@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="phishing.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="phishing.js"></script>
@@ -17,87 +19,136 @@
   <body>
     <div class="intro-container container">
       <div class="wrapper">
-        <div class="placeholder">
-          Hier kommt Bild "Horst trinkt Kaffee und isst ein Kecks"
-        </div>
-        <h1 class="text-center">Mhhhm lecker Kaffeepause</h1>
+        <div class="window hidden">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              Internet Explorer
+            </div>
 
-        <div class="mail-popup hidden">
-          <div class="popup-upper">
-            Du hast eine neue Mail
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
           </div>
-          <div class="popup-lower">
+
+          <div class="window-body">
+            <p>Du hast eine neue Mail</p>
+            <img src="cogn.png" alt="" style="width: 20%; padding: 50px 300px">
             <button class="button update-now">Öffnen</button>
           </div>
         </div>
+
       </div>
     </div>
 
     <div class="mail-container container hidden">
-      <div class="mail">
-        <div class="mail-header">
-          <div class="mail-sender">
-            <p><b>Sender:</b> info@diebank.ch</p>
-            <p><b>Empfänger:</b> horst@mail-provider.com</p>
-            <br>
-          </div>
-          <div class="mail-betreff">
-            <b>Betreff:</b> Ihr E-Banking Login
-          </div>
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Outlook
         </div>
-        <div class="mail-body">
-          <p>Sehr geehrter Herr Horst</p>
-          <p>Bei Ihrem E-Banking-Login gab es ein verdächtige Anmeldung.<br>
-          Um die Sicherheit Ihrer Daten gewährleisten zu können bitte wir Sie freundlichst
-          sich über folnden Link in Ihr E-Banking einzuloggen: </p>
-          <p><a class="mail-link" href="#">http://ebanking.diebank.ch/asdjbjewbfbjsad</a></p>
-          <p>Besten Dank für Ihr Vertrauen in unseren Bank</p>
-          <p>Freundliche Grüsse,</p>
-          <p>Ihr Kundenservice</p>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
         </div>
       </div>
 
-      <div class="options">
-        <h1 class="text-center">Wieder mal eine dieser Mail</h1>
-        <div class="text-center">
-          Solche Mails gibt es ja noch oft, wo sich Institutionen melden und etwas von einem möchten.<br>
-          Doch sind diese eigentlich vertrauenswürdig?<br>
-          Was meinst du? Soll Horst den Link anwählen?
+
+        <div class="mail">
+          <div class="mail-header">
+            <div class="mail-sender">
+              <p><b>Sender:</b> info@diebank.ch</p>
+              <p><b>Empfänger:</b> horst@mail-provider.com</p>
+              <br>
+            </div>
+            <div class="mail-betreff">
+              <b>Betreff:</b> Ihr E-Banking Login
+            </div>
+          </div>
+          <div class="mail-body">
+            <p>Sehr geehrter Herr Horst</p>
+            <p>Bei Ihrem E-Banking-Login gab es ein verdächtige Anmeldung.<br>
+            Um die Sicherheit Ihrer Daten gewährleisten zu können bitte wir Sie freundlichst
+            sich über folnden Link in Ihr E-Banking einzuloggen: </p>
+            <p><a class="mail-link" href="#">http://ebanking.diebank.ch/asdjbjewbfbjsad</a></p>
+            <p>Besten Dank für Ihr Vertrauen in unseren Bank</p>
+            <p>Freundliche Grüsse,</p>
+            <p>Ihr Kundenservice</p>
+          </div>
         </div>
-        <div class="link-box">
-          <a class="link positive-link">Ja, definitiv</a>
-          <a class="link negative-link">Nein, das ist eine Betrugsmasche</a>
-        </div>
+
+
       </div>
+
     </div>
 
-    <div class="content-container container hidden">
-      <div class="wrapper">
-        <h1 class="text-center"></h1>
-        <h2 class="text-center title"></h2>
-        <div class="text bottom-line">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
-        <h2 class="text-center topgap">Erfahre mehr darüber</h2>
-        <div class="link-box">
-          <a class="link textlink link-active">Als Text</a>
-          <a class="link audiolink">Als Audio</a>
-        </div>
-        <div class="theorietext bottom-line">
-          <p>Hier Theorie einfüfen</p>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="theorieaudio hidden bottom-line">
-          <p>Hier Audio-Datei einfügen</p>
-        </div>
-        <h2 class="text-center topgap">Phishing ist schon eine üble Sache</h2>
-        <div class="text-center">
-          <p>Aber jetzt weiss Horst bescheid. Lass uns doch seine restlichen Mails checken.</p>
-        </div>
-        <div class="link-box">
-          <a class="link "href="../passwort/passwort.html">Zu seinem Mailkonto</a>
-        </div>
+    <div class="clippit hidden">
+          <div class="clippit-box clippit-box-kante">
+            <div class="clippit-box-text container">
+              <div class="first">
+                <div class="wrapper">
+                  <div class="starttext">
+                    <p><b>Oh du hast eine neue Mail<p>
+                  </div>
+                  <div class="warntext hidden">
+                    <p><b>Hmm, ich bin mir bei dieser Mail nicht ganz sicher?</b></p>
+                    <p>Solltest du diesen Link öffnen?<p>
+                  </div>
+                  <div class="options hidden">
+                    <div class="link-box">
+                      <a class="link positive-link">Ja, definitiv</a>
+                      <a class="link negative-link">Nein, das ist eine Betrugsmasche</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+
+              <div class="second hidden">
+                <div class="wrapper">
+                  <p>Achtung bei Phishing-Mails</p>
+                  <div class="link-box">
+                    <a class="link audiolink">Als Audio</a>
+                  </div>
+                  <div class="theorieaudio hidden bottom-line">
+                    <p>Hier Audio-Datei einfügen</p>
+                  </div>
+                  <div class="text-center">
+                    <p>Aber jetzt weiss Horst bescheid. Lass uns doch seine restlichen Mails checken.</p>
+                  </div>
+                  <div class="link-box">
+                    <a class="link "href="../passwort/passwort.html">Zu seinem Mailkonto</a>
+                  </div>
+                </div>
+
+              </div>
+
+
+          </div>
+          <div class="container content-container">
+            <div class="wrapper">
+                      <div class="clippit-box-text">
+                        <div class="content-container container hidden">
+                          <div class="wrapper">
+
+
+                          </div>
+                        </div>
+
+                        </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="clippit-img">
+            <img src="clipi.png" alt="clipi">
+          </div>
       </div>
-    </div>
+
+
+
+
   </body>
 </html>

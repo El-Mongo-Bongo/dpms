@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="cookies.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="cookies.js"></script>
@@ -15,65 +16,91 @@
   </head>
 
   <body>
-    <div class="intro-container container">
-      <div class="wrapper">
-        <div class="placeholder">
-          Hier kommt Bild "Horst liest watson"
-        </div>
-        <h1 class="text-center">Let's get informed</h1>
-        <div class="text-center">
-          Zuest einmal die News checken und sich am Drama der Welt laben.
-        </div>
-        <div class="subintro-container hidden">
-          <h2 class="text-center">Immer diese Cookies</h2>
-          <div class="text-center">
-            <p>Immer diese Cookies. Da will Horst nur kurz die News lesen und schon muss er sich schon wieder entscheiden ob er etwas
-            zulassen oder ablehnen möchte..</p>
-            <p>Doch muss man diese akzeptieren?</p>
-          </div>
-          <div class="link-box">
-            <a class="link accept-link">Das Gesetz will es so!</a>
-            <a class="link decline-link">Nööö!</a>
-          </div>
+
+    <div class="window">
+
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Internet Explorer
         </div>
 
-        <div class="placeholder-big accept-meme hidden">
-          Hier kommt Meme / GIF "Ein Cookie für dich"
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
         </div>
-        <div class="placeholder-big decline-meme hidden">
-          Hier kommt Meme / GIF "Kein Cookie für dich"
-        </div>
+      </div>
+
+      <div class="window-body">
+        <img src="google.png" alt="" style="width: 100%;f">
       </div>
     </div>
 
-    <div class="container content-container hidden">
-      <div class="wrapper">
-        <h1 class="text-center"></h1>
-        <h2 class="text-center">Und wieder ein Stückchen schlauer</h2>
-        <div class="text bottom-line">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
-        <h2 class="text-center topgap">Erfahre mehr darüber</h2>
-        <div class="link-box">
-          <a class="link textlink link-active">Als Text</a>
-          <a class="link audiolink">Als Audio</a>
-        </div>
-        <div class="theorietext bottom-line">
-          <p>Hier Theorie einfüfen</p>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="theorieaudio hidden bottom-line">
-          <p>Hier Audio-Datei einfügen</p>
-        </div>
-        <h2 class="text-center topgap">Ach, so war das also mit der DSGVO</h2>
-        <div class="text-center">
-          <p>Wie wärs jetzt mit einem Kecks?</p>
-        </div>
-        <div class="link-box">
-          <a class="link "href="../phishing/phishing.html">Oh ja!</a>
-        </div>
+    <div class="clippit">
+          <div class="clippit-box clippit-box-kante">
+                <div class="intro-container container">
+                  <div class="wrapper">
+
+                    <div class="text-center">
+                      <p>Ah, wie ich sehe möchtest du die News checken.</p>
+                    </div>
+                    <div class="subintro-container hidden">
+                      <div class="text-center">
+                          <p>Aber was rollt da durch den Bilschirm?</p>
+                      </div>
+
+                      <h4 class="text-center">Was sind den diese Cookies?</h4>
+                      <div class="text-center">
+                        <p>Auch hier musst du dich kurz entscheiden.</p>
+                        <p>Möchtest du dies Coockies akzeotieren oder nicht?</p>
+                      </div>
+                      <div class="link-box">
+                        <a class="link accept-link">Das Gesetz will es so!</a>
+                        <a class="link decline-link">Nein!</a>
+                      </div>
+                    </div>
+
+                    <div class="placeholder-big accept-meme hidden">
+                      Hier kommt Meme / GIF "Ein Cookie für dich"
+                    </div>
+                    <div class="placeholder-big decline-meme hidden">
+                      Hier kommt Meme / GIF "Kein Cookie für dich"
+                    </div>
+                  </div>
+                </div>
+
+
+                    <div class="container content-container hidden">
+                      <div class="wrapper">
+                        <div class="text bottom-line">
+                          <p class="denied hidden">Das solltest du nicht!</p>
+                          <p class="confirmed hidden">Das ist korrekt!</p>
+                          <p><b>Coockie müssen aktzeptiert werden</b></p>
+                        </div>
+                        <p>Erfahre mehr darüber</p>
+                        <div class="link-box">
+                          <a class="link audiolink">Als Audio</a>
+                        </div>
+                        <div class="theorieaudio hidden bottom-line">
+                          <p>Hier Audio-Datei einfügen</p>
+                        </div>
+                        <div class="text-center">
+                          <p>Wie wärs jetzt mit einem Kecks?</p>
+                        </div>
+                        <div class="link-box">
+                          <a class="link "href="../phishing/phishing.html">Oh ja!</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+            </div>
+
+            <div class="clippit-img">
+              <img src="clipi.png" alt="clipi">
+            </div>
       </div>
-    </div>
+
 
     <div class="cookie-wrapper hidden">
       <div class="cookie rotate">

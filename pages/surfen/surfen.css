@@ -6,3 +6,33 @@
 .confirm-link, .textlink {
   margin-right: 2rem
 }
+
+.clippit-box {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 30em;
+  height: 30em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  font-size: 11pt;
+}
+
+.window {
+  margin: 50px;
+  width: 800px;
+  height: 400px;
+  background: black;
+}
+
+.window-body {
+  padding: 0;
+
+}
+
+img {
+  width: flex;
+}

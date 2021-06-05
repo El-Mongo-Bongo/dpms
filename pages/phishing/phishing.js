@@ -1,44 +1,47 @@
 $( document ).ready(function() {
   setTimeout(function(){
-    $('.mail-popup').removeClass('hidden');
+    $('.window').removeClass('hidden');
   }, 2000);
   setTimeout(function(){
-    $('.mail-popup').addClass('fadein');
-  }, 2100);
+    $('.clippit').removeClass('hidden');
+  }, 3000);
   setTimeout(function(){
-    $('h1').text('Oh eine Mail. Mal schauen was drin steht')
-  }, 2600);
+    $('.window').addClass('fadein');
+  }, 2100);
 
-  $('.mail-popup').on('click', function() {
+
+  $('.window').on('click', function() {
     $('.intro-container').addClass('hidden');
     $('.mail-container').removeClass('hidden');
     $('.mail-container').addClass('display');
+    $('.warntext').removeClass('hidden');
+    $('.options').removeClass('hidden');
   });
 
   $('.negative-link').on('click', function() {
     $('.mail-container').addClass('hidden');
     $('.mail-container').removeClass('display');
+    $('.starttext').addClass('hidden');
+    $('.warntext').addClass('hidden');
+    $('.options').addClass('hidden');
     $('.content-container').removeClass('hidden');
-    $('.content-container h1').text('Genau so ist es.');
-    $('.title').text('Das hat du gut erkannt.');
     window.scrollTo(0, 0);
   });
 
   $('.positive-link').on('click', function() {
-    $('.mail-container').addClass('hidden');
-    $('.mail-container').removeClass('display');
     $('.content-container').removeClass('hidden');
-    $('.content-container h1').text('Aufgepasst mit solchen Mails!');
-    $('.title').text('Phishing ist eine gefährliche Sache');
+    $('.first').addClass('hidden');
+    $('.second').removeClass('hidden');
     window.scrollTo(0, 0);
   });
 
   $('.mail-link').on('click', function() {
-    $('.mail-container').addClass('hidden');
-    $('.mail-container').removeClass('display');
     $('.content-container').removeClass('hidden');
-    $('.content-container h1').text('Aufgepasst mit solchen Mails!');
-    $('.content-container h2').text('Phishing ist eine gefährliche Sache');
+    $('.starttext').addClass('hidden');
+    $('.warntext').addClass('hidden');
+    $('.first').addClass('hidden');
+    $('.second').removeClass('hidden');
+
     window.scrollTo(0, 0);
   });
 

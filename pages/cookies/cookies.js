@@ -16,12 +16,11 @@ $( document ).ready(function() {
   }, 6200);
 
   $('.accept-link').on('click', function() {
-    $('.accept-meme').removeClass('hidden');
+    $('.confirmed').removeClass('hidden');
 
     setTimeout(function(){
       $('.intro-container').addClass('hidden');
       $('.content-container').removeClass('hidden');
-      $('.content-container h1').text('Genau so ist es.');
       window.scrollTo(0, 0);
     }, 1000);
 
@@ -31,12 +30,11 @@ $( document ).ready(function() {
   });
 
   $('.decline-link').on('click', function() {
-    $('.decline-meme').removeClass('hidden');
+    $('.denied').removeClass('hidden');
 
     setTimeout(function(){
       $('.intro-container').addClass('hidden');
       $('.content-container').removeClass('hidden');
-      $('.content-container h1').text('Ab und zu muss man einfach mal akzeptieren.');
       window.scrollTo(0, 0);
     }, 1000);
 

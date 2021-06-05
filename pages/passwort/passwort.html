@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="passwort.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="passwort.js"></script>
@@ -15,65 +16,117 @@
   </head>
 
   <body>
-    <div class="intro-container container">
-      <div class="wrapper">
-        <div class="login">
-          <form class="loginform">
-            <h2>Anmeldung bei dein mail-provider.com</h2>
-            <div class="loginfield">
-              <label for="uname"><b>Benutzer</b></label>
-              <input type="text" placeholder="Benutzername eingeben" name="uname" required>
-            </div>
-            <div class="loginfield">
-              <label for="psw"><b>Passwort</b></label>
-              <input type="password" placeholder="Passwort eingeben" name="psw" required>
-            </div>
-            <div class="login-button">
-              <a class="submit button">Login</a>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-            <a class="login-forgot" href="#">Passwort vergessen?</a>
-          </form>
-        </div>
-        <h1 class="text-center">Was war nur scho wieder das Passwort</h1>
-        <div class="text-center">
-          Horst ist schon ein vergesslicher Typ. Wieder hat er sein Passwort vergessen.. <br>
-          Das bleibt ihm wohl nichts anderes übrig als den "<a class="login-forgot" href="#">Passwort vergessen?</a>" Link anzuklicken..
-        </div>
-      </div>
-    </div>
 
-    <div class="container content-container hidden">
-      <div class="wrapper">
-        <h1 class="text-center">Lass uns was zur Passwortsicherheit lernen</h1>
-        <div class="text-center bottom-line">
-          Wenn man sich ein neues Passwort eingeben soll, braucht das einerseits viel Phantasie und andererseits muss das Passwort
-          gewissen Kriterien gerecht werden.
-          Das das mühsam sein kann wissen wir alle und Horst erst recht. Doch wieso sollte man darauf achten ein gutes Passwort zu wählen,
-          was ist überhaupt ein guten Passwort und gibt es Programme die einem da helfen?
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            Internet Explorer
+          </div>
+
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
         </div>
-        <h2 class="text-center topgap">Erfahre mehr darüber</h2>
-        <div class="link-box">
-          <a class="link textlink link-active">Als Text</a>
-          <a class="link audiolink">Als Audio</a>
-        </div>
-        <div class="theorietext text-center bottom-line">
-          <p>Hier Theorie einfüfen</p>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="theorieaudio text-center bottom-line hidden">
-          <p>Hier Audio-Datei einfügen</p>
-        </div>
-        <h2 class="text-center topgap">Eigentlich gut zu wissen, oder?</h2>
-        <div class="text-center">
-          <p>Das wir das nun wissen, können wir mit Horst sein neues Passwort wählen</p>
-        </div>
-        <div class="link-box">
-          <a class="link "href="../neuespasswort/neuespasswort.html">Zum Passwort-Formular</a>
+
+        <div class="window-body">
+
+          <div class="intro-container container">
+            <div class="wrapper">
+              <div class="login">
+                <form class="loginform">
+                  <h4>Anmeldung bei dein mail-provider.com</h4>
+                  <div class="loginfield">
+                    <label for="uname"><b>Benutzer</b></label>
+                    <input type="text" placeholder="Benutzername eingeben" name="uname" required>
+                  </div>
+                  <div class="loginfield">
+                    <label for="psw"><b>Passwort</b></label>
+                    <input type="password" placeholder="Passwort eingeben" name="psw" required>
+                  </div>
+                  <div class="login-button">
+                    <a class="submit button">Login</a>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                  <a class="login-forgot" href="#">Passwort vergessen?</a>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container content-container hidden">
+            <div class="wrapper">
+              <p><b>Lass uns was zur Passwortsicherheit lernen</b></p>
+              <p>Wenn man sich ein neues Passwort eingeben soll, braucht das einerseits viel Phantasie und andererseits muss das Passwort
+              gewissen Kriterien gerecht werden.
+              Das das mühsam sein kann wissen wir alle und Horst erst recht. Doch wieso sollte man darauf achten ein gutes Passwort zu wählen,
+              was ist überhaupt ein guten Passwort und gibt es Programme die einem da helfen?</p>
+              <p><b>Erfahre mehr darüber</b> </p>
+              <div class="theorieaudio">
+                <p>Hier Audio-Datei einfügen</p>
+              </div>
+              <p>Eigentlich gut zu wissen, oder?</p>
+              <div class="text-center">
+                <p>Das wir das nun wissen, können wir mit Horst sein neues Passwort wählen</p>
+              </div>
+              <div class="link-box">
+                <button type="button" name="button"><a class="link "href="../neuespasswort/neuespasswort.html">Zum Passwort-Formular</a></button>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
-    </div>
+
+
+
+
+    <div class="clippit">
+          <div class="clippit-box clippit-box-kante">
+            <div class="clippit-box-text container">
+                <div class="wrapper">
+                      <p><b>Was war nur scho wieder das Passwort</b></p>
+                      <div class="text-center">
+                        <p>Horst ist schon ein vergesslicher Typ. Wieder hat er sein Passwort vergessen.. <br></p>
+                        <p>Das bleibt ihm wohl nichts anderes übrig als den "<a class="login-forgot" href="#">Passwort vergessen?</a>" Link anzuklicken..</p>
+                      </div>
+
+                  <div class="options hidden">
+                    <div class="link-box">
+                      <a class="link positive-link">Ja, definitiv</a>
+                      <a class="link negative-link">Nein, das ist eine Betrugsmasche</a>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="container content-container">
+            <div class="wrapper">
+                      <div class="clippit-box-text">
+                        <div class="content-container container hidden">
+                          <div class="wrapper">
+
+
+                          </div>
+                        </div>
+
+                        </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="clippit-img">
+            <img src="clipi.png" alt="clipi">
+          </div>
+      </div>
+
+
   </body>
 </html>

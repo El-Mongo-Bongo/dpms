@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="surfen.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="surfen.js"></script>
@@ -15,22 +18,78 @@
   </head>
 
   <body>
-    <div class="container intro-container">
-      <div class="wrapper">
-        <div class="placeholder">
-          Hier kommt Bild "Horst will surfen"
+
+
+    <div class="window">
+
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Internet Explorer
         </div>
-        <h1 class="text-center">Nach der harten Update-Entscheidung braucht Horst erstmals eine Pause und
-          möchte ein wenig im Internet surfen</h1>
-        <div class="text-center">
-          Das Update von vorhin hat sein Interesse an Datensicherheit geweckt und nun überlegt sich Horst mit dem Inkogintobrowser
-          zu surfen um anonym in Netz unterwegs zu sein. Doch stimmt da wirklich?
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
         </div>
-        <h2 class="text-center">Was meinst du?</h2>
-        <div class="link-box">
-          <a class="link confirm-link">Klar!</a>
-          <a class="link denie-link">Sicherlich nicht!</a>
-        </div>
+      </div>
+
+      <div class="window-body">
+        <img src="cogn.png" alt="" style="width: 20%; padding: 50px 300px">
+      </div>
+    </div>
+
+
+        <div class="clippit">
+              <div class="clippit-box clippit-box-kante">
+                <div class="clippit-box-text container intro-container">
+                  <div class="wrapper">
+                  <p><b>Nach der harten Update-Entscheidung braucht Horst erstmals eine Pause und
+                    möchte ein wenig im Internet surfen</b></p>
+                  <p>Das Update von vorhin hat sein Interesse an Datensicherheit geweckt und nun überlegt sich Horst mit dem Inkogintobrowser
+                  zu surfen um anonym in Netz unterwegs zu sein. Doch stimmt da wirklich?</p>
+                  <p>Was denkst du?<p>
+                    <div class="link-box">
+                    <a class="link confirm-link">Klar!</a>
+                    <a class="link denie-link">Sicherlich nicht!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container content-container hidden">
+                <div class="wrapper">
+                          <div class="clippit-box-text">
+                            <p class="denied hidden">Das ist leider falsch</p>
+                            <p class="confirmed hidden">Das ist Korrekt!</p>
+                            <p><b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna </b></p>
+                            <p>Das Update von vorhin hat sein Interesse an Datensicherheit geweckt und nun überlegt sich Horst mit dem Inkogintobrowser
+                            zu surfen um anonym in Netz unterwegs zu sein. Doch stimmt da wirklich?</p>
+                            <p>Was denkst du?<p>
+                              <p class="text-center topgap">Erfahre mehr darüber</p>
+                              <div class="link-box">
+
+                                <a class="link audiolink">Als Audio</a>
+                              </div>
+
+                              <div class="theorieaudio hidden bottom-line">
+                                <p>Hier Audio-Datei einfügen</p>
+                              </div>
+                              <div class="text-center">
+                                <br>
+                                <p>So, nun lass Host endlich surfen und entspannen</p>
+                              </div>
+                              <div class="link-box">
+                                <a class="link "href="../cookies/cookies.html">Ok, los!</a>
+                              </div>
+                            </div>
+                </div>
+                </div>
+
+              </div>
+              <div class="clippit-img">
+                <img src="clipi.png" alt="clipi">
+              </div>
+          </div>
+
       </div>
     </div>
     <div class="placeholder-big confirm-meme hidden">
@@ -40,33 +99,6 @@
       Hier kommt Meme / GIF "Score!
     </div>
 
-    <div class="container content-container hidden">
-      <div class="wrapper">
-        <h1 class="text-center"></h1>
-        <h2 class="text-center">Doch wieso ist das so mit dem Inkogintobrowser?</h2>
-        <div class="text bottom-line">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
-        <h2 class="text-center topgap">Erfahre mehr darüber</h2>
-        <div class="link-box">
-          <a class="link textlink link-active">Als Text</a>
-          <a class="link audiolink">Als Audio</a>
-        </div>
-        <div class="theorietext bottom-line">
-          <p>Hier Theorie einfüfen</p>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="theorieaudio hidden bottom-line">
-          <p>Hier Audio-Datei einfügen</p>
-        </div>
-        <h2 class="text-center topgap">So ist das also</h2>
-        <div class="text-center">
-          <p>So, nun lass Host endlich surfen und entspannen</p>
-        </div>
-        <div class="link-box">
-          <a class="link "href="../cookies/cookies.html">Ok, los!</a>
-        </div>
-      </div>
-    </div>
+
   </body>
 </html>

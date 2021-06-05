@@ -1,12 +1,44 @@
+.window {
+  margin: 100px;
+  width: 600px;
+  height: 200px;
+}
+
+.window-body {
+    padding: 25px;
+}
+
+
+
+.clippit-box {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 30em;
+  height: 30em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  font-size: 11pt;
+}
+
+.second .clippit-box  {
+  width: 20em;
+  height: 18em;
+}
+.second .wrapper{
+  padding: 1rem;
+}
+
 .popup-window {
   width: 100%;
-  max-width: 400px;
-  height: 200px;
+  max-width: 600px;
+  height: 900px;
   position: absolute;
   display: none;
   flex-direction: column;
-  border: 2px solid #000000;
-  background-color: #FFFFFF;
 }
 
 .popup-upper {
@@ -15,6 +47,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 
 .popup-close {
   cursor: pointer;
@@ -38,10 +71,10 @@
 .popup-lower {
   padding: 0.8rem 2rem;
   margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #E0E0E0;
 }
 
 .popup-button {

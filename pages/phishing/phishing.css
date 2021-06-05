@@ -1,4 +1,42 @@
 
+.window {
+  margin: 50px;
+  width: 600px;
+  height: 400px;
+  background: black;
+  padding: 10px;
+}
+
+.clippit {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 30em;
+  height: 20em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  font-size: 11pt;
+}
+
+.clippit-box {
+  position: fixed;
+  bottom: 10cm;
+  right: 7cm;
+  width: 30em;
+  height: 30em;
+  background-color: #FFFDC7;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 1em;
+  font-size: 11pt;
+}
+
+
+
 .mail-popup {
   position: absolute;
   left: 50%;
@@ -32,10 +70,6 @@
   margin: 1rem auto;
 }
 
-.mail {
-  border: 2px solid #000;
-  background-color: #fff;
-}
 
 .mail-header {
   padding: 1rem;
