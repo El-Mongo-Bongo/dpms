@@ -188,7 +188,6 @@ body {
   border-width: thin;
   border-color: black;
   border-radius: 1em;
-  border-radius:
 }
 
 .clippit-box-kante::after {
@@ -208,4 +207,66 @@ body {
 
 .clippit-box-text {
   padding: 10px;
+}
+.start-bg{
+  background: rgb(146,176,238);
+  background: linear-gradient(174deg, rgba(146,176,238,1) 39%, rgba(89,124,218,1) 100%); 
+  width:100%;
+  height: 100vh;
+}
+.start-header, .start-footer{
+  background-color: #002e98;
+  height:6em;
+}
+.start-header{
+  box-shadow: 0px 1px 1px black;
+}
+.start-footer{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100vw;
+  box-shadow: 0px -1px 1px black;
+}
+.row{
+  display:flex;
+  justify-content: center;
+}
+.col{
+  flex:50%;
+}
+.col-left{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-right:3em;
+}
+.logo{
+  width:90%;
+}
+.link-unstyled{
+  text-decoration:none;
+}
+.user{
+  display:flex;
+  padding: 0.25em 0em;
+  align-items: center;
+}
+.avatar{
+  flex:10%;
+}
+.muted{
+  color:lightgray;
+  opacity: .5;
+  cursor:default;
+}
+.avatar-img{
+  width:30px;
+  height:auto;
+  border: 3px rgba(255,255,255,0.2) solid;
+  border-radius: 5px;
+}
+.username{
+  flex:70%;
+  color:white;
 }
