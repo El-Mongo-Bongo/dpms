@@ -3,7 +3,12 @@
   margin: 50px;
   width: 800px;
   height: 400px;
-  background: black;
+  background-image: url("google.png");
+}
+
+.window-body {
+  padding: 0;
+  margin: 0;
 }
 
 .clippit-box {

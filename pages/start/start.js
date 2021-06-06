@@ -6,11 +6,11 @@ $( document ).ready(function() {
        $('.content-container').addClass('fadein');
      }, 1300);
      setTimeout(function(){
-       $('.window').addClass('fadein');
-     }, 4000);
+       $('.clippit').addClass('fadein');
+     }, 2000);
      setTimeout(function(){
        $('.window').addClass('fadein');
-     }, 4000);
+     }, 5000);
       $('.update-now').on('click', function() {
         sessionStorage.setItem("update", "yes");
         window.location.href = "../update/update.html";
@@ -20,4 +20,3 @@ $( document ).ready(function() {
         window.location.href = "../update/update.html";
       });
 });
-

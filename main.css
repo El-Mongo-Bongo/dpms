@@ -148,7 +148,7 @@ h1 {
   left: 50%;
   margin-left: -75px;
   height: 2px;
-  background-color: #FFE462;
+  background-color: solid black;
   width: 150px;
 }
 
