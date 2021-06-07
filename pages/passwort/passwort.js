@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $('.login-forgot').on('click', function() {
-    $('.intro-container').addClass('hidden');
-    $('.content-container').removeClass('hidden');
+    $('.clippit-box-text').addClass('hidden');
+    $('.theorie').removeClass('hidden');
     window.scrollTo(0, 0);
   });
 

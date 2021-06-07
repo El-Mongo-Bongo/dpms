@@ -22,7 +22,7 @@
         <div class="window hidden">
           <div class="title-bar">
             <div class="title-bar-text">
-              Internet Explorer
+              Outlook
             </div>
 
             <div class="title-bar-controls">
@@ -33,9 +33,47 @@
           </div>
 
           <div class="window-body">
-            <p>Du hast eine neue Mail</p>
-            <img src="cogn.png" alt="" style="width: 20%; padding: 50px 300px">
-            <button class="button update-now">Öffnen</button>
+            <menu role="tablist">
+            <button aria-selected="true" aria-controls="mails">Mails</button>
+            <button aria-controls="calender">Kalender</button>
+            </menu>
+              <article role="tabpanel" id="music">
+                  <p>Du hast eine neue Mail</p>
+                  <fieldset>
+                    <legend>E-Mail Box</legend>
+                    <div class="field-row">
+                      <table>
+                        <tr>
+                          <th>Datum</th>
+                          <th>Absender</th>
+                          <th>Betreff</th>
+                        </tr>
+                        <tr>
+                          <td>18.05</td>
+                          <td>info@zkb.ch</td>
+                          <td>Achtung mit Ihrem E-Banking</td>
+                        </tr>
+                        <tr>
+                          <td>20.05</td>
+                          <td>newsletter@3plus.ch</td>
+                          <td>Die nächste Staffel Bacherlorette</td>
+                        </tr>
+                        <tr>
+                          <td><b>09.05</b></td>
+                          <td><b>info@diebank.ch</b></td>
+                          <td><b>Ihr E-Banking Login</b></td>
+                        </tr>
+                      </table>
+
+                    </div>
+
+                  </fieldset>
+                  <section class="field-row">
+                    <button class="button update-now">Öffnen</button>
+
+                  </section>
+                </article>
+
           </div>
         </div>
 
@@ -43,8 +81,9 @@
     </div>
 
     <div class="mail-container container hidden">
-    <div class="window">
-      <div class="title-bar">
+      <div class="wrapper" id="draggable">
+        <div class="window">
+        <div class="title-bar">
         <div class="title-bar-text">
           Outlook
         </div>
@@ -58,29 +97,43 @@
 
 
         <div class="mail">
-          <div class="mail-header">
-            <div class="mail-sender">
-              <p><b>Sender:</b> info@diebank.ch</p>
-              <p><b>Empfänger:</b> horst@mail-provider.com</p>
-              <br>
-            </div>
-            <div class="mail-betreff">
-              <b>Betreff:</b> Ihr E-Banking Login
-            </div>
-          </div>
-          <div class="mail-body">
-            <p>Sehr geehrter Herr Horst</p>
-            <p>Bei Ihrem E-Banking-Login gab es ein verdächtige Anmeldung.<br>
-            Um die Sicherheit Ihrer Daten gewährleisten zu können bitte wir Sie freundlichst
-            sich über folnden Link in Ihr E-Banking einzuloggen: </p>
-            <p><a class="mail-link" href="#">http://ebanking.diebank.ch/asdjbjewbfbjsad</a></p>
-            <p>Besten Dank für Ihr Vertrauen in unseren Bank</p>
-            <p>Freundliche Grüsse,</p>
-            <p>Ihr Kundenservice</p>
-          </div>
+          <menu role="tablist">
+          <button aria-selected="true" aria-controls="mails">Mails</button>
+          <button aria-controls="calender">Kalender</button>
+          </menu>
+            <article role="tabpanel" id="music">
+                <p>Du hast eine neue Mail</p>
+                <fieldset>
+                  <legend>E-Mail Box</legend>
+                  <div class="mail-header">
+                    <div class="mail-sender">
+                      <p><b>Sender:</b> info@diebank.ch</p>
+                      <p><b>Empfänger:</b> horst@mail-provider.com</p>
+                      <br>
+                    </div>
+                    <div class="mail-betreff">
+                      <b>Betreff:</b> Ihr E-Banking Login
+                    </div>
+                  </div>
+                  <div class="mail-body">
+                    <p>Sehr geehrter Herr Horst</p>
+                    <p>Bei Ihrem E-Banking-Login gab es ein verdächtige Anmeldung.<br>
+                    Um die Sicherheit Ihrer Daten gewährleisten zu können bitte wir Sie freundlichst
+                    sich über folnden Link in Ihr E-Banking einzuloggen: </p>
+                    <p><a class="mail-link" href="#">http://ebanking.diebank.ch/asdjbjewbfbjsad</a></p>
+                    <p>Besten Dank für Ihr Vertrauen in unseren Bank</p>
+                    <p>Freundliche Grüsse,</p>
+                    <p>Ihr Kundenservice</p>
+                  </div>
+
+                </fieldset>
+              </article>
+
+
+
         </div>
 
-
+      </div>
       </div>
 
     </div>
@@ -91,10 +144,10 @@
               <div class="first">
                 <div class="wrapper">
                   <div class="starttext">
-                    <p><b>Oh du hast eine neue Mail<p>
+                    <p><b>Oh du hast eine neue Mail!</b><p>
                   </div>
                   <div class="warntext hidden">
-                    <p><b>Hmm, ich bin mir bei dieser Mail nicht ganz sicher?</b></p>
+                    <p>Hmm, ich bin mir bei dieser Mail nicht ganz sicher?</p>
                     <p>Solltest du diesen Link öffnen?<p>
                   </div>
                   <div class="options hidden">

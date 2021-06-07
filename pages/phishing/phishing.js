@@ -6,8 +6,8 @@ $( document ).ready(function() {
     $('.clippit').removeClass('hidden');
   }, 3000);
   setTimeout(function(){
-    $('.window').addClass('fadein');
-  }, 2100);
+    $('.warntext').removeClass('hidden');
+  }, 5000);
 
 
   $('.window').on('click', function() {

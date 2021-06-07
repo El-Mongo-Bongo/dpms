@@ -1,4 +1,11 @@
 
+.window {
+  margin: 200px;
+  width: 400px;
+  height: 250px;
+}
+
+
 .window-body {
     padding: 25px;
     font-size: 12pt;
@@ -18,17 +25,7 @@
   100% { transform: rotate(360deg); }
 }
 
-.wrapper_load {
-  overflow: hidden;
-}
 
-.first_window .wrapper_load {
-  float: left;
-}
-
-.second_window .wrapper_load {
-  float: left;
-}
 
 
 audio {
@@ -41,7 +38,7 @@ audio {
   bottom: 10cm;
   right: 7cm;
   width: 30em;
-  height: 30em;
+  height: auto;
   background-color: #FFFDC7;
   border-style: solid;
   border-width: thin;

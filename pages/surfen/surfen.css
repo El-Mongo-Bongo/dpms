@@ -25,7 +25,9 @@
   margin: 50px;
   width: 800px;
   height: 400px;
-  background-image: url("google.png");
+}
+image {
+  padding: 1px;
 }
 
 .window-body {
