@@ -13,7 +13,7 @@ $( document ).ready(function() {
       let popups = 0;
       let time = 0;
       let maxLeft = $(window).width() - $('.popup-window').width();
-      let maxTop = $(window).height() - $('.popup-window').height();;
+      let maxTop = $(window).height() - $('.popup-window').height();
 
       $('.clip_start').addClass('hidden');
       $('.update').addClass('hidden');
@@ -39,17 +39,17 @@ $( document ).ready(function() {
 
       // close popup when ok-button is clicked
       $('.popup-button').click(function() {
-        $(this).parent().parent().parent().remove();
+        $(this).parent().parent().parent().parent().parent().remove();
         popups += 1;
 
-        if (popups == 10) {
-          $('.shortmessage').removeClass('hidden');
-        }
-
         if (popups == 40) {
-          $('.shortmessage').addClass('hidden');
+          $('.clip_start').removeClass('hidden');
           $('.container').removeClass('hidden');
           window.scrollTo(0, 0);
+        }
+
+        if (popups == 0) {
+
         }
       });
 

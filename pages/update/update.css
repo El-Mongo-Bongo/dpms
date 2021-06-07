@@ -1,8 +1,3 @@
-.window {
-  margin: 100px;
-  width: 600px;
-  height: 300px;
-}
 
 .window-body {
     padding: 25px;
@@ -53,6 +48,7 @@ audio {
   border-color: black;
   border-radius: 1em;
   font-size: 11pt;
+  z-index: 100;
 }
 
 .second .clippit-box  {
@@ -65,8 +61,8 @@ audio {
 
 .popup-window {
   width: 100%;
-  max-width: 600px;
-  height: 900px;
+  max-width: 400px;
+  height: 300px;
   position: absolute;
   display: none;
   flex-direction: column;

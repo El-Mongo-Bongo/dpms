@@ -7,13 +7,13 @@ $( document ).ready(function() {
   }, 2100);
   setTimeout(function(){
     $('.cookie-wrapper').addClass('hidden');
-  }, 6200);
+  }, 5000);
   setTimeout(function(){
     $('.subintro-container').removeClass('hidden');
-  }, 5900);
+  }, 5700);
   setTimeout(function(){
     $('.subintro-container').addClass('fadein');
-  }, 6200);
+  }, 5000);
 
   $('.accept-link').on('click', function() {
     $('.confirmed').removeClass('hidden');

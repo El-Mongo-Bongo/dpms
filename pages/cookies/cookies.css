@@ -29,9 +29,9 @@
 .cookie-wrapper {
   width: 100px;
   position: absolute;
-  bottom: 50px;
+  bottom: 30%;
   left: 0;
-  transition: width 4s linear;
+  transition: width 3s linear;
 }
 
 .cookie-wrapper-right {
@@ -134,7 +134,7 @@
 }
 
 .rotate {
-    -webkit-animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 1.5s infinite linear;
 }
 
 @-webkit-keyframes rotation {
