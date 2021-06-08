@@ -19,4 +19,25 @@ $( document ).ready(function() {
         sessionStorage.setItem("update", "no");
         window.location.href = "../update/update.html";
       });
+
+
+      var width = $(window).width();
+      if (width < 993) {
+        $('.draggableClass').removeAttr('id')
+      }
+});
+
+$(window).resize(function() {
+  var width = $(window).width();
+
+  if (width < 993) {
+    if ($('#draggable').length) {
+      $('.draggableClass').removeAttr('id')
+    }
+  }
+  else {
+    if (!$('#draggable').length) {
+      $('.draggableClass').attr('id', 'draggable');
+    }
+  }
 });

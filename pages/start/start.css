@@ -1,17 +1,3 @@
-
-.video-container {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video {
-  width: 100%;
-}
-
 .content-container {
   opacity: 0;
   transition: opacity 1s linear;
@@ -78,4 +64,34 @@
   border-color: black;
   border-radius: 1em;
   font-size: 11pt;
+}
+
+@media screen and (max-width: 992px) {
+  .window {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    order: 1;
+  }
+  .clippit {
+    order: 2;
+    margin-top: 2rem;
+  }
+  .clippit-box {
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+  }
+  .clippit-box-kante::after {
+    border: 0
+  }
+  .clippit-img {
+    margin-top: 1rem;
+    position: static;
+    float: right;
+  }
+  .clippit-img > img {
+    max-width: 100%;
+  }
 }

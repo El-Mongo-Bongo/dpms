@@ -2,12 +2,12 @@
     font-family: Roboto;
     src: url(ressources/fonts/Roboto-Light.ttf);
   }
-  
+
   @font-face {
     font-family: Roboto-Bold;
     src: url(ressources/fonts/Roboto-Bold.ttf);
   }
-  
+
   body {
     background-image: url("ressources/images/xp.jpg");
     background-image: url("xp.jpg");
@@ -19,17 +19,17 @@
     height: 100%;
     margin: 0;
   }
-  
+
   h1, h2, h3 {
     font-family: Roboto-Bold;
     max-width: 100%;
   }
-  
+
   h1 {
     margin-bottom: 1rem;
   }
-  
-  
+
+
   .container {
     max-width: 1100px;
     width: 96%;
@@ -37,41 +37,41 @@
     display: flex;
     height: calc(100vh - 12em);
   }
-  
+
   .wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
   }
-  
+
   .center {
     margin: 0 auto;
   }
-  
+
   .text-center {
     text-align: center;
     width: 100%;
   }
-  
+
   .font-big {
     font-size: 1.6rem;
   }
-  
+
   .startseite-wrapper {
     justify-content: center;
     align-items: center;
   }
-  
+
   .image-startseite {
     max-width: 100%;
     width: 650px;
   }
-  
+
   .link-wrapper {
     margin: 2rem 0;
   }
-  
+
   .link {
     position: relative;
     color: #000000;
@@ -80,7 +80,7 @@
     cursor: pointer;
     text-align: center;
   }
-  
+
   .link::after {
     content: "";
     height: 3px;
@@ -90,22 +90,22 @@
     left: 0;
     background-color: #FFE462;
   }
-  
-  
+
+
   .button {
     border: 1px solid #000;
-  
+
     background-color: #A3A3A3;
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .button:hover {
     background-color: #707070;
     color: #fff;
   }
-  
+
   .placeholder {
     width: 100%;
     height: 500px;
@@ -116,7 +116,7 @@
     align-items: center;
     text-align: center;
   }
-  
+
   .placeholder-big {
     position: fixed;
     width: 100vw;
@@ -129,20 +129,20 @@
     left: 0;
     z-index: 100;
   }
-  
+
   .hidden {
     display: none;
   }
-  
+
   .topgap {
     margin-top: 3rem;
   }
-  
+
   .bottom-line {
     position: relative;
     margin-bottom: 3rem;
   }
-  
+
   .bottom-line::after {
     content: "";
     position: absolute;
@@ -153,31 +153,31 @@
     background-color: #FFE462;
     width: 150px;
   }
-  
+
   .audiolink img, .textlink img {
     width: 1.1rem;
     height: 1.1rem;
   }
-  
+
   @media screen and (max-width: 600px) {
     .placeholder {
       height: 250px;
     }
   }
-  
+
   body {
     background-image: url("xp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .clippit-img {
     position: fixed;
     bottom: 0;
     right: 0;
     size: 70%;
   }
-  
+
   .clippit-box {
     position: fixed;
     bottom: 10cm;
@@ -190,7 +190,7 @@
     border-color: black;
     border-radius: 1em;
   }
-  
+
   .clippit-box-kante::after {
     content: '';
       position: absolute;
@@ -205,13 +205,13 @@
       margin-left: -18px;
       margin-bottom: -36px;
   }
-  
+
   .clippit-box-text {
     padding: 10px;
   }
   .start-bg{
     background: rgb(146,176,238);
-    background: linear-gradient(174deg, rgba(146,176,238,1) 39%, rgba(89,124,218,1) 100%); 
+    background: linear-gradient(174deg, rgba(146,176,238,1) 39%, rgba(89,124,218,1) 100%);
     width:100%;
     height: 100vh;
   }
@@ -275,4 +275,12 @@
     color:white;
     font-size: 1.1rem;
   }
-  
+
+@media screen and (max-width: 768px) {
+  .avatar-img{
+    width:4em;
+  }
+  .col-spacer{
+      flex:10%;
+  }
+}
