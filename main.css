@@ -209,8 +209,7 @@ h1 {
     position:relative;
   }
   body{
-    background-image: none;
-    background-color: darkgrey;
+    
     height:100%;
     width:100%;
   }

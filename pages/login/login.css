@@ -284,3 +284,12 @@
       flex:10%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .avatar-img{
+    width:3em;
+  }
+  .col-spacer{
+      flex:10%;
+  }
+}

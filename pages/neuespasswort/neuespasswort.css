@@ -64,3 +64,45 @@ label {
   color: red;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 2rem 0;
+  }
+  .window {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    order: 1;
+  }
+  .clippit {
+    order: 2;
+    margin-top: 3rem;
+  }
+  .clippit-box {
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  .clippit-box-kante::after {
+    border: 0
+  }
+  .clippit-img {
+    margin-top: 1rem;
+    position: static;
+    float: right;
+  }
+  .clippit-img > img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clippit-img > img {
+    max-height: 200px;
+  }
+  body {
+    padding: 1rem 0;
+  }
+}

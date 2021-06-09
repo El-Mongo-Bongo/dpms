@@ -75,7 +75,7 @@
   }
   .clippit {
     order: 2;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .clippit-box {
     position: static;
@@ -93,5 +93,14 @@
   }
   .clippit-img > img {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clippit-img > img {
+    max-height: 200px;
+  }
+  .wrapper {
+    padding: 1rem;
   }
 }
