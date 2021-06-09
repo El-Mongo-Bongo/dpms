@@ -8,7 +8,9 @@
   margin: 50px;
   width: 600px;
   height: 400px;
-  background: black;
+}
+.window-body {
+  padding: 10px;
 }
 
 .clippit-box {
@@ -16,11 +18,21 @@
   bottom: 10cm;
   right: 7cm;
   width: 30em;
-  height: 20em;
+  height: auto;
   background-color: #FFFDC7;
   border-style: solid;
   border-width: thin;
   border-color: black;
   border-radius: 1em;
   font-size: 11pt;
+}
+
+legend {
+  font-size: 12pt;
+
+}
+
+table {
+  width: 100%;
+
 }
