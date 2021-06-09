@@ -15,7 +15,15 @@ $( document ).ready(function() {
           window.location.href = "../mails/mails.html";
         }
         else {
-          window.location.href = "../gameover/gameover.html";
+          $('.confirm').removeClass('hidden');
+          $('.submit').addClass('hidden');
+          $('.new').on('click', function() {
+            window.location.href = window.location.href;
+          });
+          $('.definitiv').on('click', function() {
+            window.location.href = "../gameover/gameover.html";
+          });
+
         }
       }
     }
