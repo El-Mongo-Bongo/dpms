@@ -171,6 +171,7 @@ h1 {
 .clippit-img {
   position: fixed;
   bottom: 0;
+  bottom: 4em;
   right: 0;
   size: 70%;
 }
@@ -218,4 +219,28 @@ h1 {
     height:100%;
     width:100%;
   }
+}
+.taskleiste{
+  position:fixed;
+  bottom:0;
+  height:3em;
+  width:100%;
+}
+.rest{
+  background:linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+  position: relative;
+  height:100%;
+}
+.start{
+  background-color:rgb(2, 146, 2);
+  color:white;
+  text-align: center;
+  font-size: 2em;
+  position:absolute;
+  border-radius: 0px 10px 10px 0px;
+  height: 3em;
+  padding: 0;
+  padding: 0em 2em;
+  margin: 0;
+  font-size: 2em;
 }

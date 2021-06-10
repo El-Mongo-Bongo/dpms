@@ -17,6 +17,8 @@
   </head>
 
   <body>
+    <audio id="mailsound" src="../../ressources/audio/sounds/Maileingang.mp3"></audio>
+    <audio id="plopp" src="../../ressources/audio/sounds/plopp.mp3"></audio>
     <div class="intro-container container">
       <div id="draggable">
         <div class="window hidden">
@@ -69,7 +71,7 @@
 
                   </fieldset>
                   <section class="field-row">
-                    <button class="button update-now">Öffnen</button>
+                    <button class="button update-now" onclick="play()">Öffnen</button>
 
                   </section>
                 </article>
@@ -209,8 +211,19 @@
           </div>
       </div>
 
-
-
+      <div class="taskleiste">
+        <div class="rest"><p class="start">Start</p></div>
+      </div>
+      <script>
+        // onload
+        var sample = document.getElementById("mailsound");
+        sample.play()
+        //onclick
+        function play() {
+        var audio = document.getElementById("plopp");
+        audio.play();
+      }
+      </script>
 
   </body>
 </html>

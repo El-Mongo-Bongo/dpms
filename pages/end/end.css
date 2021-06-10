@@ -1,6 +1,6 @@
 
 body {
-  background: #000;
+  background: rgb(0, 133, 33);
 }
 
 .video-container {
@@ -11,9 +11,35 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.card-container{
+  display:flex;
+  justify-content: space-around;
+}
+.card{
+  width:10%;
+}
 .video {
   width: 100%;
+}
+.msg{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-16rem;
+  margin-top:-10rem;
+  font-size:8rem;
+  font-weight: bold;
+  color:black;
+  z-index: 2;
+  background-color: yellow;
+  padding: .5em;
+  border-radius: 25px;
+  animation:blinkingText 2s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: #000;background-color:yellow;    }
+  100%{   color: yellow; background-color:black;    }
 }
 
 .fadeout {
@@ -23,8 +49,12 @@ body {
 
 .end {
   opacity: 0;
-  transition: opacity 1s linear;
-  color: #fff;
+  transition: opacity 5s linear;
+  color: #000;
+  z-index:100;
+  position:absolute;
+  top:75%;
+  right:0;
 }
 
 .fadein {
@@ -39,17 +69,17 @@ body {
 
 .fade1 {
   font-size: 5rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
 }
 
 .fade2 {
-  color: #fff;
+  color: #000;
   margin-top: 2rem;
   font-size: 3rem;
 }
 
 .link {
-  color: #fff;
+  color: #000;
 }
 
 .link:hover {
