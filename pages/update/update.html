@@ -37,7 +37,7 @@
                 </div>
               </div>
               <div class="popup-lower">
-                <button class="popup-button" onclick="play()">OK</button>
+                <button class="popup-button">OK</button>
               </div>
             </div>
           </div>
@@ -47,6 +47,7 @@
   </head>
 
   <body>
+    <audio id="wait" src="../../ressources/audio/sounds/Horst_wartemusik.mp3"></audio>
     <audio id="ok" src="../../ressources/audio/sounds/OK-short.mp3"></audio>
     <div class="update" id="draggable">
       <div class="window">
@@ -127,7 +128,7 @@
                   </div>
                   <br>
                   <div class="text-center">
-                    <a class="link" href="../surfen/surfen.html" onclick="play()">Weiter gehts</a>
+                    <a class="link" href="../surfen/surfen.html">Weiter gehts</a>
                   </div>
               </div>
 
@@ -144,9 +145,9 @@
     </div>
     <script>
       //onclick
-      function play() {
-      var audio = document.getElementById("ok");
-      audio.play();
+      function play(id) {
+        var audio = document.getElementById(id);
+        audio.play();
       }
     </script>
   </body>

@@ -14,7 +14,7 @@ $( document ).ready(function() {
       let time = 0;
       let maxLeft = $(window).width() - $('.popup-window').width();
       let maxTop = $(window).height() - $('.popup-window').height();
-
+      $('#wait').get(0).play();
       $('.clip_start').addClass('hidden');
       $('.update').addClass('hidden');
       setTimeout(function(){

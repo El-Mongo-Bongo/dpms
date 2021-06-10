@@ -232,7 +232,7 @@ h1 {
   height:100%;
 }
 .start{
-  background-color:rgb(2, 146, 2);
+  background: linear-gradient(180deg,#1ff139,#049600 8%,#3abb41 40%,#0c9c14 88%,#22b73a 93%,#04ab11 95%,#0aaf08 96%,#0b8802);
   color:white;
   text-align: center;
   font-size: 2em;
