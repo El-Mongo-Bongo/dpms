@@ -7,6 +7,10 @@
   padding: 10px;
 }
 
+.window-body {
+  font-size: 11pt;
+}
+
 
 .clippit {
   position: fixed;
@@ -76,6 +80,8 @@
   padding: 1rem;
   border-bottom: 1px solid #A3A3A3;
 }
+
+
 
 .mail-header p {
   margin: 0 0 0.4rem 0;
