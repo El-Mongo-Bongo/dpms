@@ -94,7 +94,36 @@ body {
 .show {
   opacity: 1;
 }
-
+#placeholder-jpg1{
+  position:absolute;
+  top:0;
+  right:50%;
+}
+#placeholder-jpg2{
+  position:absolute;
+  top:0;
+  right:75%;
+}
+#placeholder-jpg3{
+  position:absolute;
+  top:0;
+  right:50%;
+}
+#placeholder-jpg4{
+  position:absolute;
+  top:0;
+  right:60%;
+}
+#jpg3{
+  width:20%;
+  height:auto;
+}
+.fall{
+  z-index: 3;
+}
+.restart{
+  background-color: rgba(255,255,255,.7);
+}
 @media screen and (max-width: 600px) {
   .fade1 {
     font-size: 3rem;
