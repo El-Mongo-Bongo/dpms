@@ -6,8 +6,10 @@ $( document ).ready(function() {
       window.scrollTo(0, 0);
     }
     else if (update == "no") {
+
       for (var i = 0; i < 40; i++) {
         createPopUp();
+        $('#pop').get(0).play();
       }
 
       let popups = 0;
@@ -63,7 +65,6 @@ $( document ).ready(function() {
       function createPopUp() {
         const section = $('body');
         let popup = $('#popup-error').html();
-
         section.append(popup);
       }
     }
