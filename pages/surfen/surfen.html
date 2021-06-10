@@ -16,7 +16,8 @@
   </head>
 
   <body>
-
+    <audio id="fail" src="../../ressources/audio/sounds/fail2.mp3"></audio>
+    <audio id="tada" src="../../ressources/audio/sounds/Tadaa.mp3"></audio>
 <div id="draggable">
     <div class="window">
 
@@ -46,8 +47,8 @@
                   zu surfen um anonym in Netz unterwegs zu sein. Doch stimmt das wirklich?</p>
                   <p>Was denkst du?<p>
                     <div class="link-box">
-                    <a class="link denie-link">Klar!</a>
-                    <a class="link confirm-link">Sicherlich nicht!</a>
+                    <a class="link denie-link" onclick="play('fail')">Klar!</a>
+                    <a class="link confirm-link" onclick="play('tada')">Sicherlich nicht!</a>
                   </div>
                 </div>
               </div>
@@ -100,6 +101,12 @@
     <div class="taskleiste">
       <div class="rest"><p class="start">Start</p></div>
     </div>
-
+    <script>
+      //onclick
+      function play(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+      }
+    </script>
   </body>
 </html>
