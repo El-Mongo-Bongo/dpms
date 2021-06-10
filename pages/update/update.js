@@ -46,6 +46,7 @@ $( document ).ready(function() {
           $('.clip_start').removeClass('hidden');
           $('.container').removeClass('hidden');
           window.scrollTo(0, 0);
+          $('#wait').get(0).pause();
         }
 
         if (popups == 0) {
