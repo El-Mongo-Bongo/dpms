@@ -16,6 +16,8 @@ $( document ).ready(function() {
         }
         else {
           $('.confirm').removeClass('hidden');
+          $('.second').removeClass('hidden');
+          $('.first').addClass('hidden');
           $('.submit').addClass('hidden');
           $('.new').on('click', function() {
             window.location.href = window.location.href;
