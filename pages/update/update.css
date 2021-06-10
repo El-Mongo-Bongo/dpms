@@ -1,6 +1,6 @@
 
 .window {
-  margin: 200px;
+
   width: 400px;
   height: 250px;
 }
@@ -25,9 +25,6 @@
   100% { transform: rotate(360deg); }
 }
 
-audio {
-
-}
 
 .clippit-box {
   position: fixed;

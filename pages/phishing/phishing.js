@@ -10,7 +10,7 @@ $( document ).ready(function() {
   }, 5000);
 
 
-  $('.window').on('click', function() {
+  $('.update-now').on('click', function() {
     $('.intro-container').addClass('hidden');
     $('.mail-container').removeClass('hidden');
     $('.mail-container').addClass('display');
@@ -19,6 +19,7 @@ $( document ).ready(function() {
   });
 
   $('.negative-link').on('click', function() {
+    $('.second').removeClass('hidden');
     $('.mail-container').addClass('hidden');
     $('.mail-container').removeClass('display');
     $('.starttext').addClass('hidden');

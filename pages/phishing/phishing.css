@@ -2,15 +2,11 @@
 .window {
   margin: 50px;
   width: 500px;
-  height: 300px;
+  height: auto;
   background: black;
   padding: 10px;
 }
 
-.window-body .table {
-
-
-}
 
 .clippit {
   position: fixed;
