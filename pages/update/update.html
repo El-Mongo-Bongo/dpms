@@ -37,7 +37,7 @@
                 </div>
               </div>
               <div class="popup-lower">
-                <button class="popup-button">OK</button>
+                <button class="popup-button" onclick="play()">OK</button>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
   </head>
 
   <body>
-    <audio id="ok" src="../../ressources/audio/sounds/OK.mp3"></audio>
+    <audio id="ok" src="../../ressources/audio/sounds/OK-short.mp3"></audio>
     <div class="update" id="draggable">
       <div class="window">
         <div class="title-bar">
@@ -146,7 +146,7 @@
       function play() {
       var audio = document.getElementById("ok");
       audio.play();
-    }
+      }
     </script>
   </body>
 </html>
