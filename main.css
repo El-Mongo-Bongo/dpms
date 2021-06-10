@@ -72,6 +72,11 @@ h1 {
 
 .link {
   position: relative;
+  border-color: lightgrey;
+  padding: 4px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
   color: #000000;
   text-decoration: none;
   transition: 0.2s ease-in-out;

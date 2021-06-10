@@ -1,15 +1,18 @@
 
 .window {
-
   width: 400px;
   height: 250px;
 }
 
+.update {
+  margin: 100px;
+}
 
 .window-body {
     padding: 25px;
     font-size: 12pt;
 }
+
 
 .loader {
   border: 6px solid #f3f3f3; /* Light grey */
