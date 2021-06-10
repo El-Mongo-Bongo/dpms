@@ -15,22 +15,34 @@
   </head>
 
   <body>
-    <div class="video-container">
-      <video class="video" width="100%" height="auto" autoplay playsinline muted>
-        <source src="../../ressources/videos/test_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <audio id="win" src="../../ressources/audio/sounds/Horst_winning.mp3"></audio>
+    
+    <div class="msg">
+      You win!
     </div>
 
+    <div class="card-container">
+      <img class="card" src="../../ressources/images/10diamond.svg">
+      <img class="card" src="../../ressources/images/10heart.svg">
+      <img class="card" src="../../ressources/images/10club.svg">
+      <img class="card" src="../../ressources/images/10spade.svg">
+      <img class="card" src="../../ressources/images/Adiamond.svg">
+      <img class="card" src="../../ressources/images/Aheart.svg">
+      <img class="card" src="../../ressources/images/Aclub.svg">
+      <img class="card" src="../../ressources/images/Aspade.svg">
+    </div>
     <div class="end hidden">
       <div class="container">
         <div class="wrapper">
-          <h1 class="text-center fade1">ENDE</h1>
           <div class="fade2 link-box">
             <a class="link" href="../../index.html">Zurück zur Startseite</a>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      var sample = document.getElementById("win");
+      sample.play()
+    </script>
   </body>
 </html>

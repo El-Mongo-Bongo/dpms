@@ -47,6 +47,7 @@
   </head>
 
   <body>
+    <audio id="ok" src="../../ressources/audio/sounds/OK.mp3"></audio>
     <div class="update" id="draggable">
       <div class="window">
         <div class="title-bar">
@@ -124,7 +125,7 @@
                     <p>Wenn du bereit bist kann Horst einen Tag forsetzten</p>
                   </div>
                   <div class="text-center">
-                    <a class="link "href="../surfen/surfen.html">Weiter gehts</a>
+                    <a class="link" href="../surfen/surfen.html" onclick="play()">Weiter gehts</a>
                   </div>
               </div>
 
@@ -136,5 +137,15 @@
       </div>
     </div>
     </div>
+    <div class="taskleiste">
+      <div class="rest"><p class="start">Start</p></div>
+    </div>
+    <script>
+      //onclick
+      function play() {
+      var audio = document.getElementById("ok");
+      audio.play();
+    }
+    </script>
   </body>
 </html>
