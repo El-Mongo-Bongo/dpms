@@ -18,12 +18,42 @@ $( document ).ready(function() {
        $('.fade2').addClass('show');
      }, 2500);
 
+     // fall down
+     setTimeout(function(){
+      $('img').solitaireVictory();
+    }, 500);
+
+    setTimeout(function(){
+      $('#placeholder-gif').prepend('<img class="fall" id="gif" src="../../ressources/images/space-cadet.gif">');
+      $('#gif').solitaireVictory();
+    }, 5500);
+
+    setTimeout(function(){
+      $('#placeholder-jpg1').prepend('<img class="fall" id="jpg1" src="../../ressources/images/mspaint.jpg">');
+      $('#jpg1').solitaireVictory();
+    }, 7500);
+
+    setTimeout(function(){
+      $('#placeholder-jpg2').prepend('<img class="fall" id="jpg2" src="../../ressources/images/mines.jpg">');
+      $('#jpg2').solitaireVictory();
+    }, 9500);
+
+    setTimeout(function(){
+      $('#placeholder-jpg3').prepend('<img class="fall" id="jpg3" src="../../ressources/images/Windows_Logo_old.png">');
+      $('#jpg3').solitaireVictory();
+    }, 10500);
+
+    setTimeout(function(){
+      $('#placeholder-jpg4').prepend("<div class='window fall' id='jpg4'><div class='title-bar'><div class='title-bar-text'>Error</div></div><div class='window-body'><div class='error-text'>filename.exe - System Error</div><div class='popup-middle'><div class='error-warning'>&#10060;</div><div class='error-text'>Error - System not reacting! What did you do?!?1!</div></div><div class='popup-lower'><button class='popup-button' onclick='play()'>OK</button></div></div></div></div></div>");
+      $('#jpg4').solitaireVictory();
+    }, 11500);
+
      $('.fade2').on('click', function() {
        sessionStorage.setItem("gameover", "no");
      });
-  $('img').solitaireVictory();
    
 })
+
 // src https://github.com/peterkhayes/solitaireVictory
 (function( $ ) {
 
