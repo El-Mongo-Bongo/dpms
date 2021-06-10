@@ -19,6 +19,9 @@
   <body>
     <audio id="mailsound" src="../../ressources/audio/sounds/Maileingang.mp3"></audio>
     <audio id="plopp" src="../../ressources/audio/sounds/plopp.mp3"></audio>
+    <audio id="fail" src="../../ressources/audio/sounds/fail2.mp3"></audio>
+    <audio id="tada" src="../../ressources/audio/sounds/Tadaa.mp3"></audio>
+
     <div class="intro-container container">
       <div id="draggable">
         <div class="window hidden">
@@ -71,7 +74,7 @@
 
                   </fieldset>
                   <section class="field-row">
-                    <button class="button update-now" onclick="play()">Öffnen</button>
+                    <button class="button update-now" onclick="play('plopp')">Öffnen</button>
 
                   </section>
                 </article>
@@ -153,8 +156,8 @@
                   </div>
                   <div class="options hidden">
                     <div class="link-box">
-                      <a class="link positive-link">Ja, definitiv</a>
-                      <a class="link negative-link">Nein, das ist eine Betrugsmasche</a>
+                      <a class="link positive-link" onclick="play('fail')">Ja, definitiv</a>
+                      <a class="link negative-link" onclick="play('tada')">Nein, das ist eine Betrugsmasche</a>
                     </div>
                   </div>
               </div>
@@ -219,8 +222,8 @@
         var sample = document.getElementById("mailsound");
         sample.play()
         //onclick
-        function play() {
-        var audio = document.getElementById("plopp");
+        function play(id) {
+        var audio = document.getElementById(id);
         audio.play();
       }
       </script>
