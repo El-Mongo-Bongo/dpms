@@ -16,6 +16,9 @@
   </head>
 
   <body>
+    <audio id="cookiesound" src="../../ressources/audio/sounds/cookie.mp3"></audio>
+    <audio id="tada" src="../../ressources/audio/sounds/Tadaa.mp3"></audio>
+    <audio id="fail" src="../../ressources/audio/sounds/fail2.mp3"></audio>
 <div id="draggable">
     <div class="window">
 
@@ -56,8 +59,8 @@
                       </div>
                       <br>
                       <div class="link-box">
-                        <a class="link accept-link">Nein!</a>
-                        <a class="link decline-link">Sicher!</a>
+                        <a class="link accept-link" onclick="play('tada')">Nein!</a>
+                        <a class="link decline-link" onclick="play('fail')">Sicher!</a>
                       </div>
                     </div>
                   </div>
@@ -117,5 +120,11 @@
     <div class="taskleiste">
       <div class="rest"><p class="start">Start</p></div>
     </div>
+    <script>
+      function play(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+      }
+    </script>
   </body>
 </html>

@@ -4,6 +4,7 @@ $( document ).ready(function() {
   }, 2000);
   setTimeout(function(){
     $('.cookie-wrapper').addClass('cookie-wrapper-right')
+    $('#cookiesound').get(0).play();
   }, 2100);
   setTimeout(function(){
     $('.cookie-wrapper').addClass('hidden');
