@@ -68,6 +68,9 @@ label {
   body {
     padding: 2rem 0;
   }
+  .window-container {
+    margin: 0 1rem;
+  }
   .window {
     margin: 0;
     width: 100%;
@@ -76,7 +79,7 @@ label {
   }
   .clippit {
     order: 2;
-    margin-top: 3rem;
+    margin: 1rem;
   }
   .clippit-box {
     position: static;
@@ -91,6 +94,7 @@ label {
     margin-top: 1rem;
     position: static;
     float: right;
+    margin-bottom: 2.5rem;
   }
   .clippit-img > img {
     max-width: 100%;
@@ -103,5 +107,14 @@ label {
   }
   body {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .taskleiste {
+    display: none;
+  }
+  .clippit-img {
+    margin-bottom: 1rem;
   }
 }

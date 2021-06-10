@@ -4,6 +4,10 @@
   margin-top: 2rem;
 }
 
+.link {
+  width: 175px;
+}
+
 .window {
   margin: 50px;
   width: 600px;
@@ -35,4 +39,68 @@ legend {
 table {
   width: 100%;
 
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 2rem 0;
+  }
+  #draggable {
+    margin: 1rem;
+  }
+  .window {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    height: auto;
+    order: 1;
+    padding: 0 !important;
+  }
+  .image {
+    height: 100%;
+  }
+  .image > img {
+    height: auto;
+    object-fit: cover;
+  }
+  .clippit {
+    order: 2;
+    margin: 1rem;
+  }
+  .clippit-box {
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  .clippit-box-kante::after {
+    border: 0
+  }
+  .clippit-img {
+    margin-top: 1rem;
+    position: static;
+    float: right;
+    margin-bottom: 2.5rem;
+  }
+  .clippit-img > img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clippit-img > img {
+    max-height: 200px;
+  }
+  body {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .taskleiste {
+    display: none;
+  }
+  .clippit-img {
+    margin-bottom: 1rem;
+  }
 }

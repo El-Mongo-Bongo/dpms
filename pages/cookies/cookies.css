@@ -28,7 +28,7 @@
 .cookie-wrapper {
   width: 100px;
   position: absolute;
-  bottom: 30%;
+  bottom: 75px;
   left: 0;
   transition: width 3s linear;
 }
@@ -162,16 +162,21 @@
   body {
     padding: 2rem 0;
   }
+  #draggable {
+    margin: 0 1rem;
+  }
   .window {
     margin: 0;
     width: 100%;
     max-width: 600px;
     order: 1;
     height: auto;
+    padding: 0 !important;
   }
+
   .clippit {
     order: 2;
-    margin-top: 2rem;
+    margin: 1rem;
   }
   .clippit-box {
     position: static;
@@ -186,6 +191,7 @@
     margin-top: 1rem;
     position: static;
     float: right;
+    margin-bottom: 2.5rem;
   }
   .clippit-img > img {
     max-width: 100%;
@@ -198,5 +204,14 @@
   }
   body {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .taskleiste {
+    display: none;
+  }
+  .clippit-img {
+    margin-bottom: 1rem;
   }
 }

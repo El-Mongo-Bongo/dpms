@@ -4,16 +4,12 @@ $( document ).ready(function() {
   }, 500);
 
   setTimeout(function(){
-    $('.fade2').addClass('show');
+    $('.fade3').addClass('show');
   }, 2500);
 
   setTimeout(function(){
-    $('.fade3').addClass('show');
-  }, 4500);
-
-  setTimeout(function(){
     $('.fade4').addClass('show');
-  }, 6500);
+  }, 4500);
 
   $('.fade4').on('click', function() {
     sessionStorage.setItem("gameover", "yes");

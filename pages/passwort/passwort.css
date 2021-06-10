@@ -83,9 +83,16 @@ label {
   margin-right: 2rem;
 }
 
+.link-custom {
+  width: 200px;
+}
+
 @media screen and (max-width: 992px) {
   body {
     padding: 2rem 0;
+  }
+  #draggable {
+    margin: 0 1rem;
   }
   .window {
     margin: 0;
@@ -95,11 +102,11 @@ label {
   }
   .clippit {
     order: 2;
-    margin-top: 3rem;
+    margin: 1rem;
   }
   .clippit-box {
     position: static;
-    width: 100%;
+    width: auto;
     max-width: 600px;
     height: auto;
   }
@@ -110,6 +117,7 @@ label {
     margin-top: 1rem;
     position: static;
     float: right;
+    margin-bottom: 2.5rem;
   }
   .clippit-img > img {
     max-width: 100%;
@@ -122,5 +130,14 @@ label {
   }
   body {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .taskleiste {
+    display: none;
+  }
+  .clippit-img {
+    margin-bottom: 1rem;
   }
 }
