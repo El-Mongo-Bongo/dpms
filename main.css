@@ -76,7 +76,7 @@ h1 {
   padding: 4px 10px;
   border-style: solid;
   border-width: thin;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #000000;
   text-decoration: none;
   transition: 0.2s ease-in-out;
@@ -196,10 +196,10 @@ h1 {
 	left: 80%;
 	width: 0;
 	height: 0;
-	border: 60px solid transparent;
+	border: 50px solid transparent;
 	border-top-color: #FFFDC7;
 	border-bottom: 0;
-	border-left: 0;
+	border-right: 0;
 	margin-left: -18px;
 	margin-bottom: -36px;
 }
